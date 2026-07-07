@@ -21,7 +21,12 @@ export default function Navbar({ cartCount, onOpenCart, setCurrentPage, onOpenSe
         <button onClick={() => setCurrentPage('journal')} style={{ background: 'none', border: 'none', cursor: 'pointer' }} className="desktop-link">Journal</button>
       </div>
 
-      <div className="logo" onClick={() => setCurrentPage('home')} style={{ cursor: 'pointer' }}>
+      <div className="logo" onClick={() => setCurrentPage('home')} style={{ 
+        cursor: 'pointer',
+        position: 'absolute',
+        left: '50%',
+        transform: 'translateX(-50%)'
+      }}>
         NOVA
       </div>
 
